@@ -1,0 +1,77 @@
+Kind,Name,AvgCyclomatic,AvgCyclomaticModified,AvgLineBlank,AvgLineCode,CountLine,CountLineCode,Cyclomatic,AvgLineComment,CountClassDerived,MaxCyclomatic
+Class,"Analysis.Lizard",1,1,0,2,8,7,,0,0,1
+Function,"Analysis.Lizard.__init__",,,,,2,2,1,,,
+Function,"Analysis.Lizard.get_cyclomatic_complexity",,,,,3,3,1,,,
+Class,"Analysis.Radon",1,1,1,5,68,51,,0,0,1
+Function,"Analysis.Radon.__init__",,,,,2,2,1,,,
+Function,"Analysis.Radon.analyse_code",,,,,4,4,1,,,
+Function,"Analysis.Radon.get_average_complexity",,,,,11,9,1,,,
+Function,"Analysis.Radon.get_cyclomatic_complexity",,,,,8,6,1,,,
+Function,"Analysis.Radon.get_file_cyclomatic_complexity",,,,,6,5,1,,,
+Function,"Analysis.Radon.get_file_maintainability_index",,,,,6,5,1,,,
+Function,"Analysis.Radon.get_maintainability_index",,,,,8,6,1,,,
+Function,"Analysis.Radon.get_raw_metrics",,,,,8,6,1,,,
+Class,"Analysis.Sonar",1,1,0,2,13,11,,0,0,1
+Function,"Analysis.Sonar.__init__",,,,,2,2,1,,,
+Function,"Analysis.Sonar.purge_repo_analysis",,,,,2,2,1,,,
+Function,"Analysis.Sonar.sonar_analysis",,,,,4,4,1,,,
+Module File,"Analysis.py",1,1,0,4,100,73,0,0,,1
+Class,"Git.GitCL",1,1,0,4,41,32,,0,0,3
+Function,"Git.GitCL.__init__",,,,,2,2,1,,,
+Function,"Git.GitCL.clone_repo",,,,,2,2,1,,,
+Function,"Git.GitCL.get_auth_details",,,,,6,6,1,,,
+Function,"Git.GitCL.get_commit_changes",,,,,2,2,1,,,
+Function,"Git.GitCL.get_files_changed",,,,,16,12,3,,,
+Function,"Git.GitCL.set_repo_commit",,,,,2,2,1,,,
+Module File,"Git.py",1,1,0,4,47,35,0,0,,3
+Class,"Graph.Neo",1,1,1,6,53,40,,0,0,3
+Function,"Graph.Neo.exists",,,,,5,5,3,,,
+Function,"Graph.Neo.generate_file_user_graph",,,,,11,9,2,,,
+Function,"Graph.Neo.generate_graph",,,,,15,10,2,,,
+Function,"Graph.Neo.get_auth_details",,,,,6,6,1,,,
+Function,"Graph.Neo.login",,,,,5,4,1,,,
+Module File,"Graph.py",1,1,1,6,57,42,0,0,,3
+Class,"Helpers.CommandLine",1,1,0,2,17,14,,0,0,1
+Function,"Helpers.CommandLine.__init__",,,,,2,2,1,,,
+Function,"Helpers.CommandLine.execute_cmd_get_result",,,,,3,3,1,,,
+Function,"Helpers.CommandLine.execute_cmd_print",,,,,3,3,1,,,
+Function,"Helpers.CommandLine.get_full_dir",,,,,2,2,1,,,
+Class,"Helpers.Commit",1,1,0,3,15,13,,0,0,1
+Function,"Helpers.Commit.__init__",,,,,2,2,1,,,
+Function,"Helpers.Commit.deobfuscate_identity",,,,,4,4,1,,,
+Function,"Helpers.Commit.obfuscate_identity",,,,,4,4,1,,,
+Class,"Helpers.File",1,1,0,5,48,39,,0,0,5
+Function,"Helpers.File.__init__",,,,,2,2,1,,,
+Function,"Helpers.File.export_metrics",,,,,16,13,5,,,
+Function,"Helpers.File.get_commit_details",,,,,11,10,1,,,
+Function,"Helpers.File.get_file",,,,,4,4,1,,,
+Function,"Helpers.File.get_json_from_cmd",,,,,2,2,1,,,
+Function,"Helpers.File.strip_data",,,,,2,2,1,,,
+Class,"Helpers.JSON",1,1,0,2,7,6,,0,0,1
+Function,"Helpers.JSON.__init__",,,,,2,2,1,,,
+Function,"Helpers.JSON.pretty_print_json",,,,,2,2,1,,,
+Module File,"Helpers.py",1,1,0,3,100,77,0,0,,5
+Class,"Persistence.Persistence",1,1,0,3,40,31,,0,0,2
+Function,"Persistence.Persistence.clear_jobs_w_constraint",,,,,3,3,1,,,
+Function,"Persistence.Persistence.get_all_data",,,,,3,3,1,,,
+Function,"Persistence.Persistence.get_constrained_data",,,,,3,3,1,,,
+Function,"Persistence.Persistence.insert_document",,,,,3,3,1,,,
+Function,"Persistence.Persistence.insert_documents",,,,,3,3,1,,,
+Function,"Persistence.Persistence.purge_db",,,,,7,6,2,,,
+Function,"Persistence.Persistence.update_document",,,,,3,3,1,,,
+Module File,"Persistence.py",1,1,0,3,43,31,0,0,,2
+Function,"main.determine_average_complexity",,,,,3,3,1,,,
+Function,"main.determine_commit_details",,,,,3,3,1,,,
+Function,"main.determine_cyclomatic_complexity",,,,,11,9,5,,,
+Function,"main.determine_maintainability",,,,,14,10,4,,,
+Function,"main.determine_raw_metrics",,,,,18,13,3,,,
+Function,"main.generate_radon_stats",,,,,26,21,4,,,
+Function,"main.get_repo_data",,,,,30,22,5,,,
+Function,"main.harvest_github",,,,,15,9,2,,,
+Function,"main.harvest_repo",,,,,17,14,2,,,
+Function,"main.harvest_repositories",,,,,27,19,3,,,
+Function,"main.iterate_over_commits",,,,,36,18,2,,,
+Function,"main.main",,,,,2,2,1,,,
+Function,"main.print_collection",,,,,3,3,2,,,
+Module File,"main.py",2,2,3,11,266,169,2,1,,5
+Function,"main.record_repo",,,,,14,11,2,,,
